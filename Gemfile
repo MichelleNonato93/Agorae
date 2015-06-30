@@ -47,3 +47,6 @@ group :development, :test do
 end
 
 
+#devise
+gem 'devise'
+
