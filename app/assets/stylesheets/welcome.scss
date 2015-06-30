@@ -1,0 +1,506 @@
+//colors
+
+$white:#fff;
+$black:#000;
+$blue:#005993;
+$bluish-gray:#E7F1F6;
+$grayish-black:#333333;
+$font_style:'Open Sans', sans-serif;
+
+
+
+.right-off-canvas-menu {
+  background: transparent;
+}
+
+//sector_one
+.sector_one{
+  background-image:url('hero6.jpg');
+
+  .layer{
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .top-bar{
+    padding:1% 5% 4% 5%;
+    border-bottom:1px solid $bluish-gray;
+
+    .top-bar-section{
+      li{
+        a{
+          font-weight:light;
+
+          &:hover{
+            color:$blue;
+          }
+        }
+      }
+    }
+  }
+
+  .top-bar-section li a{
+    background: none repeat scroll 0% 0% transparent;
+    line-height: 2.8125rem;
+    padding: 0px 0.9375rem;
+    font-size: 16px;
+    font-family:$font_style;
+  }
+
+  .title{
+    h1{
+      font-family:$font_style;
+      font-weight:bold;
+      margin-top:30%;
+      color:$white;
+    }
+  }
+
+  .subtitle{
+    .subheader{
+      color:$white;
+      margin-bottom:4%;
+    }
+  }
+
+  .buttons{
+    margin-bottom:20%;
+
+    .explore-btn{
+      margin-right:4%;
+      font-weight:bold;
+      background-color:$white;
+      border:2px solid $white;
+      color:$grayish-black;
+
+      &:hover{
+        background-color:transparent;
+        border:2px solid $bluish-gray;
+        color:$white;
+        font-weight:bold;
+      }
+    }
+
+    .sign-up-btn{
+      margin-right:4%;
+      font-weight:bold;
+      background-color:$white;
+      border:2px solid $white;
+      color:$grayish-black;
+
+      &:hover{
+        background-color:transparent;
+        border:2px solid $bluish-gray;
+        color:$white;
+        font-weight:bold;
+      }
+    }
+  }
+
+
+}
+
+//sector_two
+.sector_two{
+  padding:5%;
+  border-bottom:1px solid $bluish-gray;
+
+  .title{
+    h3{
+      font-family:$font_style;
+      margin-bottom:5%;
+    }
+  }
+
+  .title p{
+    font-family:$font_style;
+    font-size:1em;
+    margin-top:4%;
+  }
+
+  .description p{
+    font-family:$font_style;
+     font-size:0.833em;
+    }
+}
+
+//sector_three
+.sector_three{
+  padding:5%;
+
+  .title{
+    h2{
+      font-family:$font_style;
+      margin-bottom:1;
+    }
+  }
+
+  .sub-title{
+    h4{
+      font-family:$font_style;
+      color:$black;
+    }
+
+    h5{
+      font-family:$font_style;
+      color:$black;
+    }
+  }
+
+  .buttons{
+    margin-top:5%;
+
+    .explore-btn{
+      margin-right:4%;
+      font-weight:bold;
+      background-color:$white;
+      border:2px solid $grayish-black;
+      color:$grayish-black;
+
+      &:hover{
+        background-color:$grayish-black;
+        border:2px solid $grayish-black;
+        color:$white;
+        font-weight:bold;
+      }
+    }
+
+    .sign-up-btn{
+      margin-right:4%;
+      font-weight:bold;
+      background-color:$white;
+      border:2px solid $grayish-black;
+      color:$grayish-black;
+
+      &:hover{
+        background-color:$grayish-black;
+        border:2px solid $grayish-black;
+        color:$white;
+        font-weight:bold;
+      }
+    }
+  }
+
+
+}
+
+//sector_four{
+.sector_four{
+  background-image:url('event-bg.png');
+  padding:4% 0 4% 0;
+
+  .title{
+    p{
+      font-family:$font_style;
+      text-transform:uppercase;
+      font-size:1em;
+      font-weight:bold;
+      color:$white;
+    }
+
+    p.right{
+      color:$blue;
+
+      &:hover{
+        color:$grayish-black;
+      }
+    }
+  }
+
+  .event_content{
+    background-color:$white;
+
+    .event_date{
+      position: absolute;
+      top: 46px;
+      height: 54.5%;
+      width: 10%;
+      z-index: 10;
+      background-color: rgba(0, 46, 167, 0.4);
+
+      p{
+        margin-top:50%;
+        color:$white;
+        font-family:$font_style;
+        font-size:1.125em;
+        font-weight:bold;
+      }
+    }
+
+    .details_content{
+      padding:8%;
+
+      .event_title p{
+        font-family:$font_style;
+        margin-bottom:0;
+        font-weight:bold;
+      }
+
+      .event_address p{
+        font-family:$font_style;
+        line-height:1;
+        margin-bottom:0;
+      }
+
+      .event_time p{
+        font-family:$font_style;
+      }
+    }
+  }
+
+  img{
+    width:400px;
+    height:200px;
+  }
+
+  .ticket_availability{
+    background-color:$blue;
+    padding:10% 0 2% 0;
+
+    .ticket{
+      margin:0 30% 0 30%;
+      width:50px;
+      height:40px;
+    }
+
+    p{
+      color:$white;
+      font-family:$font_style;
+    }
+  }
+}
+
+
+//sector_five
+.sector_five{
+  background-color:$bluish-gray;
+
+  .title{
+    p{
+      font-family:$font_style;
+      font-weight:bold;
+    }
+
+    p.right{
+      color:$blue;
+      font-weight:bold;
+    }
+  }
+
+  .recent_event{
+    padding-top:10%;
+    padding-bottom:5%;
+
+    .event_content{
+      margin-bottom:10%;
+    }
+
+    img{
+      height:200px;
+      width:300px;
+    }
+
+    .event_details{
+      padding:3%;
+      background-color:$white;
+
+      .event_title p{
+        font-family:$font_style;
+        margin-bottom:0;
+      }
+
+      .event_date p{
+        font-family:$font_style;
+        font-size:0.500em;
+        margin-bottom:5%;
+      }
+      .event_description p{
+        font-family:$font_style;
+        font-size:0.833em;
+      }
+    }
+  }
+
+  .event_subscribe{
+    margin-top:2%;
+    background-color:$white;
+    padding:2%;
+
+
+    h5{
+      font-weight:bold;
+      font-family:$font_style;
+      margin-bottom:0;
+    }
+
+    h6{
+      font-family:$font_style;
+    }
+
+    .send-btn{
+      font-size:0.625em;
+      width:100px;
+      background-color:transparent;
+      color:$black;
+      font-weight:bold;
+      border-bottom:1px solid $grayish-black;
+      height:37px;
+    }
+
+   input[type=text]{
+      border:none;
+      box-shadow:none;
+      border-bottom:1px solid $grayish-black;
+    }
+
+    input[type=text]:focus{
+      border:none;
+      box-shadow:none;
+      background-color:transparent;
+      border-bottom:1px solid $grayish-black;
+    }
+
+    input::-webkit-input-placeholder {
+      color: $black;
+      font-family: $font_style;
+    }
+
+    input::-moz-placeholder{
+      color: $black;
+      font-family: $font_style;
+      font-size:0.625em;
+    }
+
+  }
+
+  .featured_event{
+
+    .title{
+      padding-top:5%;
+      padding-left:3%;
+      color:$white;
+      padding-bottom:0.50%;
+      background-color:$blue;
+    }
+
+    .event_content{
+      background-color:$white;
+      padding:5% 3% 3% 3%;
+
+      .event_title h5{
+        font-family:$font_style;
+        margin-top:5%;
+        margin-bottom:10%;
+      }
+
+      .event_date{
+        font-weight:bold;
+        font-family:$font_style;
+      }
+
+      .event_description p{
+        font-family:$font_style;
+        margin-top:10%;
+      }
+
+      .reserve-btn{
+        background-color:transparent;
+        color:$black;
+        border:2px solid $grayish-black;
+        font-size:0.750em;
+        font-weight:bold;
+
+        &:hover{
+          background-color:$grayish-black;
+          color:$white;
+          font-size:0.750em;
+        }
+      }
+
+      .view-btn{
+        margin-top:20%;
+        background-color:transparent;
+        color:$black;
+        border:2px solid $grayish-black;
+        font-size:0.750em;
+        font-weight:bold;
+
+        &:hover{
+          background-color:$grayish-black;
+          color:$white;
+          font-size:0.750em;
+        }
+      }
+
+      dl{
+        margin-top:4%;
+        font-size:0.750em;
+        dd{
+          border-bottom:1px solid $bluish-gray;
+        }
+      }
+
+    }
+  }
+
+}
+
+//sector_six
+.sector_six{
+  padding:5%;
+
+  h2{
+    font-family:$font_style;
+  }
+
+  h4{
+    font-family:$font_style;
+    color:$black;
+  }
+
+  .register-btn{
+    background-color:$blue;
+    font-weight:bold;
+    position:relative;
+    left:35px;
+    margin-top:10%;
+
+    &:hover{
+      background-color:transparent;
+      border:1px solid $blue;
+      color:$blue;
+    }
+  }
+}
+
+//footer
+.footer{
+  background-color:$grayish-black;
+  padding:2.5% 8% 1% 8%;
+
+  p{
+    color:$white;
+    font-family:$font_style;
+    font-weight:bold;
+    font-size:0.833em;
+  }
+
+  .right{
+    ul{
+      li a{
+        font-family:$font_style;
+        color:$white;
+        font-weight:bold;
+        font-size:0.833em;
+
+        &:hover{
+          color:$blue;
+        }
+      }
+    }
+  }
+
+  .arrow-up{
+    width:30px;
+    height:30px;
+  }
+}
