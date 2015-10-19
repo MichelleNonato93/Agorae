@@ -46,7 +46,5 @@ group :development, :test do
   gem 'spring'
 end
 
-
-#devise
+#authentication
 gem 'devise'
-
