@@ -4,10 +4,12 @@ $white:#fff;
 $black:#000;
 $blue:#005993;
 $bluish-gray:#E7F1F6;
+$dark-gray:#1c1c1c;
 $grayish-black:#333333;
+$pink:#ee1f79;
+$orange:#fe5d05;
+$light_green:#9ac42f;
 $font_style:'Open Sans', sans-serif;
-
-
 
 .right-off-canvas-menu {
   background: transparent;
@@ -15,20 +17,25 @@ $font_style:'Open Sans', sans-serif;
 
 //sector_one
 .sector_one{
-  background-image:url('hero6.jpg');
-
-  .layer{
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+  background-image:url('591.jpg');
 
   .top-bar{
-    padding:1% 5% 4% 5%;
-    border-bottom:1px solid $bluish-gray;
+    background-color: $dark-gray;
+    padding:2% 1% 5% 1%;
 
     .top-bar-section{
+
+      .icon{
+        width:10em;
+        margin-top:-8%;
+      }
+
       li{
         a{
           font-weight:light;
+          text-transform: uppercase;
+          font-weight:400;
+          letter-spacing: 0.1em;
 
           &:hover{
             color:$blue;
@@ -36,6 +43,52 @@ $font_style:'Open Sans', sans-serif;
         }
       }
     }
+
+        li:first-child{
+      &:hover{
+        border-bottom:3px solid $blue;
+        a{
+          color:$blue;
+        }
+      }
+    }
+
+    li:nth-child(2) {
+      &:hover{
+        border-bottom:3px solid #ee1f79;
+        a{
+          color:#ee1f79;
+        }
+      }
+    }
+
+    li:nth-child(3) {
+      &:hover{
+        border-bottom:3px solid #fe5d05;
+        a{
+          color:#fe5d05;
+        }
+      }
+    }
+
+    li:nth-child(4) {
+      &:hover{
+        border-bottom:3px solid #feb806;
+        a{
+          color:#feb806;
+        }
+      }
+    }
+
+    li:nth-child(5) {
+      &:hover{
+        border-bottom:3px solid #9ac42f;
+        a{
+          color:#9ac42f;
+        }
+      }
+    }
+
   }
 
   .top-bar-section li a{
@@ -47,56 +100,140 @@ $font_style:'Open Sans', sans-serif;
   }
 
   .title{
-    h1{
-      font-family:$font_style;
-      font-weight:bold;
-      margin-top:30%;
-      color:$white;
+
+    .icon{
+      width:250px;
+      margin-right:auto;
+      margin-left:auto;
+      display:block;
+      margin-top:2%;
     }
   }
 
   .subtitle{
     .subheader{
-      color:$white;
+      color:$black;
       margin-bottom:4%;
+      text-align:center;
     }
   }
 
   .buttons{
-    margin-bottom:20%;
+    margin-bottom:10%;
 
     .explore-btn{
       margin-right:4%;
+      border:3px solid $blue;
+      background-color:transparent;
+      color:$blue;
       font-weight:bold;
-      background-color:$white;
-      border:2px solid $white;
-      color:$grayish-black;
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+      width:10em;
+
+
 
       &:hover{
-        background-color:transparent;
-        border:2px solid $bluish-gray;
-        color:$white;
         font-weight:bold;
+        background-color:$blue;
+        color:$white;
       }
     }
 
-    .sign-up-btn{
-      margin-right:4%;
-      font-weight:bold;
-      background-color:$white;
-      border:2px solid $white;
-      color:$grayish-black;
 
-      &:hover{
-        background-color:transparent;
-        border:2px solid $bluish-gray;
-        color:$white;
-        font-weight:bold;
-      }
-    }
   }
 
+  .creative-title{
+    // border-color:$white;
+    // border-style:double;
+    margin:18% 0 18% 0;
+  }
+}
 
+//sector_about_us
+.sector_about_us{
+    background-image:url('13.jpg');
+
+  .top-bar{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:2% 1% 5% 1%;
+
+    .top-bar-section{
+
+      .icon{
+        width:12em;
+        margin-top:-8%;
+      }
+
+      li{
+        a{
+          font-weight:light;
+          text-transform: uppercase;
+          font-weight:400;
+          letter-spacing: 0.1em;
+
+          &:hover{
+            color:$blue;
+          }
+        }
+      }
+    }
+
+    li:first-child{
+      &:hover{
+        border-bottom:3px solid $blue;
+        a{
+          color:$blue;
+        }
+      }
+    }
+
+    li:nth-child(2) {
+      &:hover{
+        border-bottom:3px solid #ee1f79;
+        a{
+          color:#ee1f79;
+        }
+      }
+    }
+
+    li:nth-child(3) {
+      &:hover{
+        border-bottom:3px solid #fe5d05;
+        a{
+          color:#fe5d05;
+        }
+      }
+    }
+
+    li:nth-child(4) {
+      &:hover{
+        border-bottom:3px solid #feb806;
+        a{
+          color:#feb806;
+        }
+      }
+    }
+
+    li:nth-child(5) {
+      &:hover{
+        border-bottom:3px solid #9ac42f;
+        a{
+          color:#9ac42f;
+        }
+      }
+    }
+
+  }
+
+  .top-bar-section li a{
+    background: none repeat scroll 0% 0% transparent;
+    line-height: 2.8125rem;
+    padding: 0px 0.9375rem;
+    font-size: 16px;
+    font-family:$font_style;
+  }
 }
 
 //sector_two
@@ -198,7 +335,7 @@ $font_style:'Open Sans', sans-serif;
     }
 
     p.right{
-      color:$blue;
+      color:$pink;
 
       &:hover{
         color:$grayish-black;
@@ -215,7 +352,7 @@ $font_style:'Open Sans', sans-serif;
       height: 54.5%;
       width: 10%;
       z-index: 10;
-      background-color: rgba(0, 46, 167, 0.4);
+      background-color: rgba(205, 38, 106, 0.6);
 
       p{
         margin-top:50%;
@@ -253,7 +390,7 @@ $font_style:'Open Sans', sans-serif;
   }
 
   .ticket_availability{
-    background-color:$blue;
+    background-color:$pink;
     padding:10% 0 2% 0;
 
     .ticket{
@@ -321,7 +458,7 @@ $font_style:'Open Sans', sans-serif;
   }
 
   .event_subscribe{
-    margin-top:2%;
+    margin-top:1.2%;
     background-color:$white;
     padding:2%;
 
@@ -458,17 +595,23 @@ $font_style:'Open Sans', sans-serif;
   }
 
   .register-btn{
-    background-color:$blue;
-    font-weight:bold;
-    position:relative;
-    left:35px;
-    margin-top:10%;
-
-    &:hover{
+      margin-top:8%;
+      border:3px solid $light_green;
       background-color:transparent;
-      border:1px solid $blue;
-      color:$blue;
-    }
+      color:$light_green;
+      font-weight:bold;
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+      width:10em;
+
+
+
+      &:hover{
+        font-weight:bold;
+        background-color:$light_green;
+        color:$white;
+      }
   }
 }
 
@@ -494,6 +637,7 @@ $font_style:'Open Sans', sans-serif;
 
         &:hover{
           color:$blue;
+          border-bottom:1px solid $blue;
         }
       }
     }

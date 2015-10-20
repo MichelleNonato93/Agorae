@@ -1,49 +1,42 @@
 <section class="sector_one">
   <div class="layer">
-    <nav class="top-bar" data-topbar role="navigation">
+    <nav class="top-bar" data-topbar role="navigation" data-magellan-expedition="fixed">
       <div class="row">
         <div class="large-12 columns">
           <section class="top-bar-section">
-           <ul class="right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li class="has-dropdown">
-              <a href="#">Register</a>
-                <ul class="dropdown">
-                  <li>
-                    <a href="#">Sign Up</a>
-                  </li>
-                  <li>
-                    <a href="#">Sign In</a></li>
-                </ul>
-              </li>
+            <ul class="left"><%= image_tag("Agorae-icon.png", class: "icon") %></ul>
+             <ul class="right">
+              <li><%= link_to "Home", '/'  %></li>
+              <li><%= link_to "Events", '/events'  %></li>
+              <li><%= link_to "About Us", '/about_us'  %></li>
+              <li><%= link_to "Contact Us", '/contact_us'  %></li>
+              <li><%= link_to "Register", new_user_registration_path  %></li>
+            </ul>
           </section>
           </div>
         </div>
       </nav>
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="row">
-          <div class="large-6 columns">
-            <div class="title">
-              <h1>Agorae</h1>
-            </div>
-            <div class="subtitle">
-              <h3 class="subheader">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque</h3>
-              <h5 class="subheader">
-                Donec sollicitudin molestie malesuada.
-              </h5>
-            </div>
-            <div class="buttons">
-              <a href="#" class="button explore-btn">Explore</a>
-              <a href="#" class="button sign-up-btn">Sign Up</a>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-8 large-offset-2  columns">
+              <div class="creative-title">
+                <div class="title">
+                  <%= image_tag("Agorae-icon.png", class: "icon") %>
+                </div>
+                <div class="subtitle">
+                  <h2 class="subheader">
+                    Donec sollicitudin molestie malesuada.
+                  </h2>
+                </div>
+                <div class="buttons">
+                  <a href="#" class="button explore-btn">Explore</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
 
@@ -117,8 +110,8 @@
               </h5>
             </div>
             <div class="buttons">
-              <a href="#" class="button explore-btn">Explore</a>
-              <a href="#" class="button sign-up-btn">Sign Up</a>
+              <%= link_to "Register", new_user_registration_path, :class => 'button explore-btn'  %>
+              <%= link_to "Sign In", new_user_session_path, :class => 'button sign-up-btn'  %>
             </div>
           </div>
         </div>
@@ -370,7 +363,7 @@
       <h4 class="subheader text-center">Don't Wait! Register Now!</h4>
       <div class="row">
         <div class="large-3 large-centered columns">
-          <a href="" class="button register-btn">Reserve Me</a>
+          <%= link_to "Reserve Me", new_user_registration_path, :class => 'button register-btn'  %>
         </div>
       </div>
     </div>
