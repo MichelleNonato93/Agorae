@@ -640,6 +640,14 @@ $font_style:'Open Sans', sans-serif;
           border-bottom:1px solid $blue;
         }
       }
+
+      li{
+        a:last-child{
+          &:hover{
+            border-bottom:none;
+          }
+        }
+      }
     }
   }
 

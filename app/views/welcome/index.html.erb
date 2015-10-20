@@ -1,5 +1,5 @@
 <section class="sector_one">
-  <div class="layer">
+  <div id="top" class="layer">
     <nav class="top-bar" data-topbar role="navigation" data-magellan-expedition="fixed">
       <div class="row">
         <div class="large-12 columns">
@@ -30,7 +30,7 @@
                   </h2>
                 </div>
                 <div class="buttons">
-                  <a href="#" class="button explore-btn">Explore</a>
+                  <a href="#sector_two" class="button explore-btn">Explore</a>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
   </div>
 </section>
 
-<section class="sector_two">
+<section id="sector_two" class="sector_two">
   <div class="row">
     <div class="large-12 columns">
       <div class="title">
@@ -381,7 +381,7 @@
           <li><a href="">About Us</a></li>
           <li><a href="">Terms &amp; Condition</a></li>
           <li><a href="">Contact Us</a></li>
-          <li><a href=""><%= image_tag("arrow_up.png", class: "arrow-up") %></a></li>
+          <li><%= link_to "#{image_tag("arrow_up.png", class: "arrow-up")}".html_safe, "#top" %></li>
         </ul>
       </div>
     </div>
