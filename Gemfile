@@ -48,3 +48,6 @@ end
 
 #authentication
 gem 'devise'
+
+#authorization
+# gem 'cancancan', '~> 1.10'

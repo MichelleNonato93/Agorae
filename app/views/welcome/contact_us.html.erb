@@ -1,0 +1,75 @@
+<section class="sector_contact_us">
+  <div class="layer">
+    <nav class="top-bar" data-topbar role="navigation" data-magellan-expedition="fixed">
+      <div class="row">
+        <div class="large-12 columns">
+          <section class="top-bar-section">
+            <ul class="left"><%= image_tag("Agorae-icon.png", class: "icon") %></ul>
+             <ul class="right">
+              <li><%= link_to "Home", '/'  %></li>
+              <li><%= link_to "Events", '/events'  %></li>
+              <li><%= link_to "About Us", '/about_us'  %></li>
+              <li><%= link_to "Contact Us", '/contact_us'  %></li>
+              <li><%= link_to "Register", new_user_registration_path  %></li>
+            </ul>
+          </section>
+          </div>
+        </div>
+      </nav>
+
+      <div class="contact_content">
+        <div class="row">
+          <div class="large-6 large-offset-3 columns">
+            <p>CONTACT US</p>
+            <%= image_tag("separator.png", class: "line") %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-10 large-offset-1 columns">
+            <div class="contact_form">
+              <form>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <label>First Name
+                      <input type="text">
+                    </label>
+                  </div>
+                  <div class="large-6 columns">
+                    <label>Last Name
+                      <input type="text">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <label>Email
+                      <input type="text">
+                    </label>
+                  </div>
+                  <div class="large-6 columns">
+                    <label>Mobile No.
+                      <input type="text">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>Message
+                      <textarea placeholder="Leave Us your thoughts here."></textarea>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-6 large-offset-3 columns">
+                    <div class="buttons">
+                      <a href="#" class="button send-btn">Send Mail</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>

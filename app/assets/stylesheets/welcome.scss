@@ -391,8 +391,14 @@ $font_style:'Open Sans', sans-serif;
       }
     }
 
-
   }
+
+  .ar-down{
+      width:3em;
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+    }
 
   .creative-title{
     // border-color:$white;
@@ -483,6 +489,158 @@ $font_style:'Open Sans', sans-serif;
     padding: 0px 0.9375rem;
     font-size: 16px;
     font-family:$font_style;
+  }
+
+  .about_us_content{
+    p{
+      color:$black;
+      font-size:40px;
+      letter-spacing:0.2em;
+      margin-top:10%;
+    }
+
+    .line{
+      width:15em;
+      display:block;
+      margin-right:3%;
+      margin-left:3%;
+    }
+  }
+}
+
+
+//sector_contact_us
+.sector_contact_us{
+    background-image:url('55.jpg');
+    height:100%;
+
+  .top-bar{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:2% 1% 5% 2%;
+
+    .top-bar-section{
+
+      .icon{
+        width:7em;
+        margin-top:-8%;
+      }
+
+      li{
+        a{
+          font-weight:light;
+          text-transform: uppercase;
+          font-weight:400;
+          letter-spacing: 0.1em;
+
+          &:hover{
+            color:$blue;
+          }
+        }
+      }
+    }
+
+    li:first-child{
+      &:hover{
+        border-bottom:3px solid $blue;
+        a{
+          color:$blue;
+        }
+      }
+    }
+
+    li:nth-child(2) {
+      &:hover{
+        border-bottom:3px solid #ee1f79;
+        a{
+          color:#ee1f79;
+        }
+      }
+    }
+
+    li:nth-child(3) {
+      &:hover{
+        border-bottom:3px solid #fe5d05;
+        a{
+          color:#fe5d05;
+        }
+      }
+    }
+
+    li:nth-child(4) {
+      &:hover{
+        border-bottom:3px solid #feb806;
+        a{
+          color:#feb806;
+        }
+      }
+    }
+
+    li:nth-child(5) {
+      &:hover{
+        border-bottom:3px solid #9ac42f;
+        a{
+          color:#9ac42f;
+        }
+      }
+    }
+
+  }
+
+  .top-bar-section li a{
+    background: none repeat scroll 0% 0% transparent;
+    line-height: 2.8125rem;
+    padding: 0px 0.9375rem;
+    font-size: 16px;
+    font-family:$font_style;
+  }
+
+  .contact_content{
+    margin-left:20%;
+    margin-right:20%;
+
+    p{
+      color:$white;
+      font-size:40px;
+      letter-spacing:0.2em;
+      margin-top:10%;
+    }
+
+    .line{
+      width:15em;
+      display:block;
+      margin-right:11%;
+      margin-left:11%;
+    }
+  }
+
+  .contact_form{
+    margin-top:5%;
+
+    label{
+      font-weight:bold;
+      color:$blue;
+      margin-bottom:2%;
+    }
+
+    .send-btn{
+      margin-right:4%;
+      border:3px solid $blue;
+      background-color:transparent;
+      color:$blue;
+      font-weight:bold;
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+      width:10em;
+
+
+
+      &:hover{
+        font-weight:bold;
+        background-color:$blue;
+        color:$white;
+      }
+    }
   }
 }
 
