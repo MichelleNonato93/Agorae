@@ -1,3 +1,0 @@
-class SamformController < ApplicationController
-
-end

@@ -1,6 +1,6 @@
-class CreateSamforms < ActiveRecord::Migration
+class CreateDetails < ActiveRecord::Migration
   def change
-    create_table :samforms do |t|
+    create_table :details do |t|
       t.string :name
       t.string :email
       t.string :contact_number

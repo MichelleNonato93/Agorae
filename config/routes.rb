@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/about_us' => 'welcome#about_us'
   get '/events' => 'welcome#events'
   get '/contact_us' => 'welcome#contact_us'
+  get '/details' => 'detailsm#index'
 
   root 'welcome#index'
 
