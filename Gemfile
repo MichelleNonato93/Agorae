@@ -51,3 +51,6 @@ gem 'devise'
 
 #authorization
 # gem 'cancancan', '~> 1.10'
+
+#photo upload
+gem 'carrierwave'
