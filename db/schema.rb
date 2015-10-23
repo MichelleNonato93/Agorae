@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151019145617) do
+ActiveRecord::Schema.define(version: 20151023012202) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,15 @@ ActiveRecord::Schema.define(version: 20151019145617) do
     t.integer  "speaker_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "samforms", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "contact_number"
+    t.string   "photo"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "speakers", force: :cascade do |t|
